@@ -1,0 +1,23 @@
+- title: Event 1
+  month: Feb
+  date: 20
+  timerange: Monday 2.30 - 2.50
+  location: ISV Temple
+
+- title: Event 2
+  month: Mar
+  date: 21
+  timerange: Monday 2.30 - 2.50
+  location: ISV Temple
+
+- title: Event 3
+  month: Apr
+  date: 22
+  timerange: Monday 2.30 - 2.50
+  location: ISV Temple
+
+- title: Event 4
+  month: May
+  date: 23
+  timerange: Monday 2.30 - 2.50
+  location: ISV Temple

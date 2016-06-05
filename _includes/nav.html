@@ -1,0 +1,60 @@
+{% include base.html %}
+<!-- ******NAV****** -->
+<nav class="main-nav" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button><!--//nav-toggle-->
+    </div><!--//navbar-header-->
+    <div class="navbar-collapse collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active nav-item"><a href="{{base}}/">Home</a></li>
+        <li class="nav-item"><a href="#/about.html">About Us</a></li>
+        <li class="nav-item dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="index.html#">Courses <i class="fa fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#/courses.html">Course List</a></li>
+            <li><a href="#/course-single.html">Single Course (with image)</a></li>
+            <li><a href="#/course-single-2.html">Single Course (with video)</a></li>
+            <li class="dropdown-submenu">
+              <a class="trigger" tabindex="-1" href="index.html#">Menu Levels <i class="fa fa-angle-right"></i></a>
+              <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="index.html#">Submenu Level 2</a></li>
+                <li class="dropdown-submenu">
+                  <a class="trigger" href="index.html#">Submenu Level 2 <i class="fa fa-angle-right"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="index.html#">Submenu Level 3</a></li>
+                    <li><a href="index.html#">Submenu Level 3</a></li>
+                  </ul>
+                </li>
+                <li><a href="index.html#">Submenu Level 2</a></li>
+                <li><a href="index.html#">Submenu Level 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Events <i class="fa fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            {% for event in site.events %}
+            <li><a href="{{base}}/events/{{event.link}}.html">{{event.title}}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Publications <i class="fa fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            {% for publication in site.publications %}
+            <li><a href="{{base}}/publications/{{publication.link}}.html">{{publication.title}}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+        <li class="nav-item"><a href="#/contact.html">Contact</a></li>
+      </ul><!--//nav-->
+    </div><!--//navabr-collapse-->
+  </div><!--//container-->
+</nav><!--//main-nav-->

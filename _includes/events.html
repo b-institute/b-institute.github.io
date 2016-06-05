@@ -1,0 +1,19 @@
+<section class="events">
+  <h1 class="section-heading text-highlight"><span class="line">Events</span></h1>
+  <div class="section-content">
+  {% for event in site.data.events %}
+    <div class="event-item">
+      <p class="date-label">
+        <span class="month">{{ event.month }}</span>
+        <span class="date-number">{{ event.date }}</span>
+      </p>
+      <div class="details">
+        <h2 class="title">{{ event.title }}</h2>
+        <p class="time"><i class="fa fa-clock-o"></i>{{ event.timerange }}</p>
+        <p class="location"><i class="fa fa-map-marker"></i>{{ event.location }}</p>
+      </div><!--//details-->
+    </div><!--event-item-->
+  {% endfor %}
+    <a class="read-more" href="{{base}}/events.html">All events<i class="fa fa-chevron-right"></i></a>
+  </div><!--//section-content-->
+</section><!--//events-->

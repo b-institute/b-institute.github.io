@@ -1,0 +1,24 @@
+<section class="testimonials">
+  <h1 class="section-heading text-highlight"><span class="line"> Testimonials</span></h1>
+  <div class="carousel-controls">
+    <a class="prev" href="index.html#testimonials-carousel" data-slide="prev"><i class="fa fa-caret-left"></i></a>
+    <a class="next" href="index.html#testimonials-carousel" data-slide="next"><i class="fa fa-caret-right"></i></a>
+  </div><!--//carousel-controls-->
+  <div class="section-content">
+    <div id="testimonials-carousel" class="testimonials-carousel carousel slide">
+      <div class="carousel-inner">
+        {% for testimonial in site.data.testimonials %}
+        <div class="item active">
+          <blockquote class="quote">
+            <p><i class="fa fa-quote-left"></i>{{testimonial.fulltext}}</p>
+          </blockquote>
+          <div class="row">
+            <p class="people col-md-8 col-sm-3 col-xs-8"><span class="name">{{testimonial.author}}</span><br /><span class="title">{{testimonial.authorExtra}}</span></p>
+            <img class="profile col-md-4 pull-right" src="assets/images/testimonials/{{testimonial.authorAvatar}}.png"  alt="" />
+          </div>
+        </div><!--//item-->
+        {% endfor %}
+      </div><!--//carousel-inner-->
+    </div><!--//testimonials-carousel-->
+  </div><!--//section-content-->
+</section><!--//testimonials-->

@@ -1,0 +1,17 @@
+url: http://binstitute.org
+name: Bhaktivedanta Instititute
+excerpt_separator: <!--more-->
+sass:
+  sass_dir: _scss
+  style: compressed
+imgur:
+  clientId: e32667ad3e34ce3
+  secret: a94e80feaa51d1af14bddfe8e572d32e96243adb
+  tempAlbumId: BWPjU
+collections:
+  events:
+    output: true
+    permalink: /events/:path
+  publications:
+    output: true
+    permalink: /publications/:path
