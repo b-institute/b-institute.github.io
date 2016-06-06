@@ -1976,6 +1976,10 @@ ul.custom-list-style {
         color: $color_6;
       }
     }
+    .profile {
+      border-radius: 50%;
+    }
+
   }
   .awards {
     background: #fff;
@@ -2407,6 +2411,7 @@ ul.custom-list-style {
     .testimonials {
       .carousel {
         .item {
+          height: 372px;
           min-height: 298px;
         }
       }
