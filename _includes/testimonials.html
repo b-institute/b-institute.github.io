@@ -8,7 +8,7 @@
     <div id="testimonials-carousel" class="testimonials-carousel carousel slide">
       <div class="carousel-inner">
         {% for testimonial in site.data.testimonials %}
-        <div class="item active">
+        <div class="item {% if forloop.index == 1 %} active {% endif %}">
           <blockquote class="quote">
             <p><i class="fa fa-quote-left"></i>{{testimonial.fulltext}}</p>
           </blockquote>

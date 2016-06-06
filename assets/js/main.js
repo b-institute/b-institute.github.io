@@ -52,40 +52,6 @@ $(document).ready(function() {
 		}
     });
 
-
-    /* ======= Style Switcher ======= */
-
-    $('#config-trigger').on('click', function(e) {
-        var $panel = $('#config-panel');
-        var panelVisible = $('#config-panel').is(':visible');
-        if (panelVisible) {
-            $panel.hide();
-        } else {
-            $panel.show();
-        }
-        e.preventDefault();
-    });
-
-    $('#config-close').on('click', function(e) {
-        e.preventDefault();
-        $('#config-panel').hide();
-    });
-
-
-    $('#color-options a').on('click', function(e) {
-        var $styleSheet = $(this).attr('data-style');
-        var $logoImage = $(this).attr('data-logo');
-		$('#theme-style').attr('href', $styleSheet);
-		$('#logo').attr('src', $logoImage);
-
-		var $listItem = $(this).closest('li');
-		$listItem.addClass('active');
-		$listItem.siblings().removeClass('active');
-
-		e.preventDefault();
-
-	});
-
     $.ajax({
         type: "GET",
         url: "https://api.imgur.com/3/album/{{ site.imgur.tempAlbumId }}/images",
@@ -104,12 +70,12 @@ $(document).ready(function() {
             for (var i = 0; i < 5; i++) {
                 var image = json.data[i];
                 var liHtml = ''+
-                    '<img src="' + image.link + '"  alt="' + image.link + '" />' +
-                    '<p class="flex-caption">' +
-                    '  <span class="main" >' + image.title + '</span>' +
-                    '  <br />' +
-                    '  <span class="secondary clearfix" >' + (image.description ? image.description : '') + '</span>' +
-                    '</p>';
+                    '<img src="' + image.link + '"  alt="' + image.link + '" />';
+                    // '<p class="flex-caption">' +
+                    // '  <span class="main" >' + image.title + '</span>' +
+                    // '  <br />' + (image.description ?
+                    // '  <span class="secondary clearfix" >' + image.description + '</span>' : '') +
+                    // '</p>';
                 $(document.createElement('li')).append(liHtml).appendTo(slidesList);
             }
 
