@@ -14,7 +14,7 @@
   <!-- Plugins CSS -->
   <link rel="stylesheet" href="{{base}}/assets/plugins/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" href="{{base}}/assets/plugins/flexslider/flexslider.css">
-  <link rel="stylesheet" href="{{base}}/assets/plugins/pretty-photo/css/prettyPhoto.css">
+  <!-- <link rel="stylesheet" href="{{base}}/assets/plugins/pretty-photo/css/prettyPhoto.css"> -->
   <!-- Theme CSS -->
   <link id="theme-style" rel="stylesheet" href="{{base}}/assets/css/styles.css">
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -24,13 +24,16 @@
   <![endif]-->
   <script src="https://www.google.com/jsapi"></script>
   <script type="text/javascript">
-    google.load('search', '1');
-    google.setOnLoadCallback(function(){
-      window.CSE = new google.search.CustomSearchControl();
-      CSE.draw('cse');
-      CSE.input.className += " form-control";
-      document.getElementById('search-go-btn').style.display = 'none';
-    }, true);
+    /**
+     * TODO: Commented for now due to UI issues
+     * google.load('search', '1');
+     * google.setOnLoadCallback(function(){
+     *   window.CSE = new google.search.CustomSearchControl();
+     *   CSE.draw('cse');
+     *   CSE.input.className += " form-control";
+     *   document.getElementById('search-go-btn').style.display = 'none';
+     * }, true);
+     */
   </script>
 </head>
 

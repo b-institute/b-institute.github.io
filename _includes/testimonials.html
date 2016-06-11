@@ -6,7 +6,7 @@
   </div><!--//carousel-controls-->
   <div class="section-content">
     <div id="testimonials-carousel" class="testimonials-carousel carousel slide">
-      <div class="carousel-inner">
+      <div class="carousel-inner normalize-height">
         {% for testimonial in site.data.testimonials %}
         <div class="item {% if forloop.index == 1 %} active {% endif %}">
           <blockquote class="quote">
