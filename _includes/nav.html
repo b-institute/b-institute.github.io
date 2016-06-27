@@ -14,7 +14,7 @@
       <ul class="nav navbar-nav">
         <li class="active nav-item"><a href="{{base}}/">Home</a></li>
         <li class="nav-item"><a href="#/about.html">About Us</a></li>
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="index.html#">Courses <i class="fa fa-angle-down"></i></a>
           <ul class="dropdown-menu">
             <li><a href="#/courses.html">Course List</a></li>
@@ -36,7 +36,7 @@
               </ul>
             </li>
           </ul>
-        </li>
+        </li> -->
         <li class="nav-item dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Events <i class="fa fa-angle-down"></i></a>
           <ul class="dropdown-menu">
@@ -48,6 +48,7 @@
         <li class="nav-item dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Publications <i class="fa fa-angle-down"></i></a>
           <ul class="dropdown-menu">
+            <li><a href="{{base}}/journal/current-issue">Journal</a></li>
             {% for publication in site.publications %}
             <li><a href="{{base}}/publications/{{publication.link}}.html">{{publication.title}}</a></li>
             {% endfor %}

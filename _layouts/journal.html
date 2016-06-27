@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<div class="page-wrapper">
+  <header class="page-heading clearfix">
+    <h1 class="heading-title pull-left">Savijñānam</h1>
+    <div class="breadcrumbs pull-right">
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-label">You are here:</li>
+        <li><a href="../index.html">Home</a><i class="fa fa-angle-right"></i></li>
+        <li><a href="../journal/current-issue">Journal</a><i class="fa fa-angle-right"></i></li>
+        <li class="current">{{page.link}}</li>
+      </ul>
+    </div><!--//breadcrumbs-->
+  </header>
+  <div class="page-content journal">
+    <h3 class="title">Journal</h3>
+    <div class="row page-row">
+      <div class="faq-wrapper col-md-3 col-sm-4">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-1">
+                Issues
+                </a>
+              </h4>
+            </div><!--//pane-heading-->
+            <div id="collapse-1" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <ul>
+                {% for issue in site.journal %}
+                  <li> <a href="{{base}}/journal/{{issue.link}}">{{issue.title}}</a> </li>
+                {% endfor %}
+                </ul>
+              </div><!--//panel-body-->
+            </div><!--//panel-colapse-->
+          </div><!--//panel-->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" class="collapsed" href="#collapse-2">Articles/Excerpts</a>
+              </h4>
+            </div><!--//pane-heading-->
+            <div id="collapse-2" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul>
+                  {% for excerpt in page.excerpts %}
+                    <li> <a href="#{{excerpt.link}}">{{excerpt.title}}</a> </li>
+                  {% endfor %}
+                </ul>
+              </div><!--//panel-body-->
+            </div><!--//panel-colapse-->
+          </div><!--//panel-->
+        </div><!--//panel-group-->
+      </div>
+      <div class="col-md-9 col-sm-8">
+        <div class="panel panel-theme">
+          <div class="panel-body">
+            {{content}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--//page-content-->
+</div><!--//page-->

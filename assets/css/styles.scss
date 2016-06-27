@@ -2489,3 +2489,28 @@ aside.page-sidebar > section {
   margin-bottom: 0;
 }
 
+.journal {
+  section {
+    background: none;
+  }
+  .panel table {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .md-floated.left {
+    padding: 0 30px 15px 0;
+    float: left;
+  }
+  .md-floated.right {
+    padding: 0 0 15px 30px;
+    float: right;
+  }
+
+  #accordion {
+    ul {
+      padding: 0 0 0 15px;
+      margin: 0;
+      list-style-type: none;
+    }
+  }
+}

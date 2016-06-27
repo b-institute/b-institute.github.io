@@ -1,7 +1,7 @@
 ---
 layout: publication
-title: Journal
-link: journal
+title: Journal (old)
+link: journal-sample
 description:
   - Some basic description (optional)
   - Another Paragraph (optional)
