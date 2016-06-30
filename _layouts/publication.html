@@ -1,33 +1,38 @@
 ---
 layout: default
 ---
-<div class="page-wrapper">
-  <header class="page-heading clearfix">
-    <h1 class="heading-title pull-left">Publications</h1>
-    <div class="breadcrumbs pull-right">
-      <ul class="breadcrumbs-list">
-        <li class="breadcrumbs-label">You are here:</li>
-        <li><a href="../index.html">Home</a><i class="fa fa-angle-right"></i></li>
-        <li><a href="../events.html">Events</a><i class="fa fa-angle-right"></i></li>
-        <li class="current">{{page.title}}</li>
-      </ul>
-    </div><!--//breadcrumbs-->
-  </header>
-  <div class="page-content">
-    <div class="row page-row">
-      <div class="jobs-wrapper col-md-8 col-sm-7">
-      <h3 class="title">{{page.title}}</h3>
-      {{ content }}
-      </div>
-      <aside class="page-sidebar col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1">
-        <section class="widget has-divider">
-          {% for paragraph in page.description %}
-            <p>{{paragraph}}</p>
-          {% endfor %}
-          <a class="btn btn-theme" href="#">Find out more</a>
-        </section><!--//widget-->
-      </aside>
+<!-- ******CONTENT****** -->
+<div class="content container">
 
-    </div>
-  </div><!--//page-content-->
-</div><!--//page-->
+  <div class="page-wrapper">
+    <header class="page-heading clearfix">
+      <h1 class="heading-title pull-left">Publications</h1>
+      <div class="breadcrumbs pull-right">
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-label">You are here:</li>
+          <li><a href="../index.html">Home</a><i class="fa fa-angle-right"></i></li>
+          <li><a href="../events.html">Events</a><i class="fa fa-angle-right"></i></li>
+          <li class="current">{{page.title}}</li>
+        </ul>
+      </div><!--//breadcrumbs-->
+    </header>
+    <div class="page-content">
+      <div class="row page-row">
+        <div class="jobs-wrapper col-md-8 col-sm-7">
+        <h3 class="title">{{page.title}}</h3>
+        {{ content }}
+        </div>
+        <aside class="page-sidebar col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1">
+          <section class="widget has-divider">
+            {% for paragraph in page.description %}
+              <p>{{paragraph}}</p>
+            {% endfor %}
+            <a class="btn btn-theme" href="#">Find out more</a>
+          </section><!--//widget-->
+        </aside>
+
+      </div>
+    </div><!--//page-content-->
+  </div><!--//page-->
+
+</div><!--//content-->

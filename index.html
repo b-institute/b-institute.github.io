@@ -6,18 +6,24 @@ layout: default
 {% include slider.html %}
 {% include news-slider.html %}
 
-<!-- grid content -->
-<div class="row cols-wrapper">
-  <div class="col-md-3">
-  {% include events.html %}
-  </div>
-  <div class="col-md-6">
-    {% include mini-tour.html %}
-  </div>
-  <div class="col-md-3">
-    {% include aside-links.html %}
-    {% include testimonials.html %}
-  </div>
-</div>
 
-{% include sectional.html %}
+<!-- ******CONTENT****** -->
+<div class="content container">
+
+  <!-- grid content -->
+  <div class="row cols-wrapper">
+    <div class="col-md-3">
+    {% include events.html %}
+    </div>
+    <div class="col-md-6">
+      {% include mini-tour.html %}
+    </div>
+    <div class="col-md-3">
+      {% include aside-links.html %}
+      {% include testimonials.html %}
+    </div>
+  </div>
+
+  {% include sectional.html %}
+
+</div><!--//content-->
