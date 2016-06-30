@@ -1,0 +1,94 @@
+---
+# Parse this file
+---
+
+.header-main {
+  .logo {
+    float: left;
+
+    #logo {
+      width: 140px;
+    }
+  }
+}
+
+.header {
+  & + .content.container {
+    .page-wrapper {
+      padding-top: 30px;
+    }
+  }
+}
+
+
+#promo-slider {
+  margin-bottom: 0;
+}
+
+aside.page-sidebar > section {
+  padding: 20px;
+}
+
+.gsc-branding, .gsc-clear-button {
+  display: none;
+}
+
+#cse .gsc-search-box {
+  margin-bottom: 0;
+}
+
+.journal {
+  section {
+    background: none;
+  }
+  .panel table {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .md-floated.left {
+    padding: 0 30px 15px 0;
+    float: left;
+  }
+  .md-floated.right {
+    padding: 0 0 15px 30px;
+    float: right;
+  }
+
+  #accordion {
+    ul {
+      padding: 0 0 0 15px;
+      margin: 0;
+      list-style-type: none;
+    }
+  }
+}
+
+.main-nav {
+  float: right;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+  .header {
+    .header-main {
+      padding-bottom: 0;
+      .logo {
+        float: none;
+        #logo {
+          width: 120px;
+        }
+      }
+    }
+  }
+
+  .main-nav {
+    background: #08274c;
+    margin: 20px -50px 0;
+    float: none;
+
+    .navbar-header {
+      padding-right: 12px;
+    }
+  }
+}

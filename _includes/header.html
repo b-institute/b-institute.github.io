@@ -1,6 +1,7 @@
 <!-- ******HEADER****** -->
 <header class="header">
-  <div class="top-bar">
+  <!-- top bar -->
+  <!-- <div class="top-bar">
     <div class="container">
       <ul class="social-icons col-md-6 col-sm-6 col-xs-12 hidden-xs">
         <li><a href="index.html#" ><i class="fa fa-twitter"></i></a></li>
@@ -9,7 +10,7 @@
         <li><a href="index.html#" ><i class="fa fa-linkedin"></i></a></li>
         <li><a href="index.html#" ><i class="fa fa-google-plus"></i></a></li>
         <li class="row-end"><a href="index.html#" ><i class="fa fa-rss"></i></a></li>
-      </ul><!--//social-icons-->
+      </ul>
       <form class="pull-right search-form" role="search">
         <div class="form-group" id="cse">
           <input type="text" class="form-control" placeholder="Search the site...">
@@ -17,11 +18,14 @@
         <button type="submit" id="search-go-btn" class="btn btn-theme">Search</button>
       </form>
     </div>
-  </div><!--//to-bar-->
+  </div> -->
+
   <div class="header-main container">
     <h1 class="logo" aria-label="Bhaktivedanta Institute">
-      <a href="{{base}}/index.html"><img id="logo" width="200" src="{{base}}/assets/images/biglogo.png" alt="Logo"></a>
-    </h1><!--//logo-->
-    <h3>Promoting the Synthesis of Science and Spirituality since 1974</h3>
-  </div><!--//header-main-->
-</header><!--//header-->
+      <a href="/"><img id="logo" width="200" src="{{base}}/assets/images/biglogo-2.png" alt="Logo"></a>
+    </h1>
+    {% include nav.html %}
+    <!-- <h3>Promoting the Synthesis of Science and Spirituality since 1974</h3> -->
+  </div>
+
+</header>

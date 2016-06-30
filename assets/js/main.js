@@ -104,8 +104,10 @@ $(document).ready(function() {
 
       /* ======= Flexslider ======= */
       $('.flexslider').flexslider({
-        animation: "fade",
-        start: function () {
+        animation: "slide",
+        start: function ($slider) {
+          $slider.addClass('rendered');
+          $slider.find('.flex-slider-mask').height($slider.height());
           $('#promo-slider').normalizeHeight('.slides li');
         }
       });
