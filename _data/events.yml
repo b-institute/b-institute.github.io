@@ -1,23 +1,23 @@
-- title: Event 1
-  month: Feb
-  date: 20
-  timerange: Monday 2.30 - 2.50
-  location: ISV Temple
+- title: Discussion on Science and Philosophy
+  month: July
+  date: 17
+  timerange: Sunday 17.30 - 19.30
+  location: IISER Kalyani
 
-- title: Event 2
-  month: Mar
-  date: 21
-  timerange: Monday 2.30 - 2.50
-  location: ISV Temple
+- title: Discussion on Science and Philosophy
+  month: July
+  date: 24
+  timerange: Sunday 17.30 - 19.30
+  location: IISER Kalyani
 
-- title: Event 3
-  month: Apr
-  date: 22
-  timerange: Monday 2.30 - 2.50
-  location: ISV Temple
+- title: Discussion on Science and Philosophy
+  month: July
+  date: 31
+  timerange: Sunday 17.30 - 19.30
+  location: IISER Kalyani
 
-- title: Event 4
-  month: May
-  date: 23
-  timerange: Monday 2.30 - 2.50
-  location: ISV Temple
+- title: Discussion on Science and Philosophy
+  month: August
+  date: 7
+  timerange: Sunday 17.30 - 19.30
+  location: IISER Kalyani
