@@ -12,8 +12,8 @@ layout: default
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-label">You are here:</li>
           <li><a href="../index.html">Home</a><i class="fa fa-angle-right"></i></li>
-          <li><a href="../journal/current-issue">Journal</a><i class="fa fa-angle-right"></i></li>
-          <li class="current">{{page.link}}</li>
+          <li><a href="../journal">Journal</a><i class="fa fa-angle-right"></i></li>
+          <li class="current">{{page.title}}</li>
         </ul>
       </div><!--//breadcrumbs-->
     </header>
@@ -36,6 +36,7 @@ layout: default
                   {% for issue in site.journal %}
                     <li> <a href="{{base}}/journal/{{issue.link}}">{{issue.title}}</a> </li>
                   {% endfor %}
+                    <li> <a href="{{base}}/journal.html">All Issues</a> </li>
                   </ul>
                 </div><!--//panel-body-->
               </div><!--//panel-colapse-->

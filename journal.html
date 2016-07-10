@@ -1,5 +1,26 @@
 ---
-layout: journal
+layout: gallery
+title: Journal
 ---
 
-Hello World.
+      <div class="page-row">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis, nisl eget venenatis ultricies, eros augue semper turpis, vitae euismod leo urna vitae nulla. Mauris sem urna, aliquet quis sodales et, convallis vel ante. Sed convallis id sem sed feugiat. Aenean eget tempus tortor.</p>
+        <p class="page-row text-muted">Image credit: <a href="http://www.flickr.com/photos/francisco_osorio/" target="_blank">Francisco Osorio</a>, <a href="http://creativecommons.org/licenses/by/2.0/deed.en" target="_blank">Creative Commons 2.0 license</a></p>
+      </div>
+      <div class="row page-row">
+
+        {% for issue in site.journal offset: 1 %}
+          <div class="col-md-3 col-sm-3 col-xs-12 text-center">
+            <div class="album-cover">
+              <a href="{{base}}/journal/{{issue.link}}">
+                <img class="img-responsive" src="../assets/images/journal/{{issue.link}}.png" alt="{{issue.title}}" />
+              </a>
+              <div class="desc">
+                <h4><small><a href="{{base}}/journal/{{issue.link}}">{{issue.title}}</a></small></h4>
+                <p>{{issue.description[0]}}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+
+      </div><!--//page-row-->
