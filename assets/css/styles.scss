@@ -6,6 +6,7 @@
 
 // Color variables
 $site-theme-color: #003068;
+$site-theme-color-dark: #0b2544;
 $site-theme-ox: #002147;
 $site-theme-color-old: #6091ba;
 $color_1: #444;
@@ -63,16 +64,16 @@ body {
 }
 .wrapper {
   min-height: 100%;
-  margin-bottom: -344px;
+  margin-bottom: -212px;
   &:after {
     content: "";
     display: block;
-    height: 344px;
+    height: 212px;
   }
 }
 .footer {
-  height: 344px;
-  background: #444;
+  height: 212px;
+  background: $site-theme-color;
   color: $color_4;
   p {
     color: $color_10;
@@ -86,11 +87,15 @@ body {
   h3 {
     margin-top: 0;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #dce7f0;
+    font-size: 20px;
   }
   .footer-content {
-    padding: 30px 0;
+    padding: 30px 0 10px;
     font-size: 12px;
-    min-height: 300px;
+
     .footer-col {
       .footer-col-inner {
         padding: 0 15px;
@@ -141,9 +146,15 @@ body {
         }
       }
     }
+
+    .contact {
+      p.adr, p.email, p.tel {
+        font-size: 12px;
+      }
+    }
   }
   .bottom-bar {
-    background: #2b2b2b;
+    background: $site-theme-color-dark;
     padding: 5px 0;
     .copyright {
       font-size: 11px;
@@ -318,13 +329,15 @@ a.btn-cta {
     box-shadow: none;
   }
 }
-blockquote {
-  font-size: 14px;
+blockquote, .people {
+  font-size: 13px;
   p {
     font-size: 14px;
     line-height: 1.5;
   }
 }
+
+
 .RedDamask {
   background-color: #e27240;
   &:hover {
@@ -597,7 +610,7 @@ ul.custom-list-style {
 .nav {
   >li {
     >a {
-      font-size: 13px;
+      font-size: 20px;
       &:focus {
         background: inherit;
       }
@@ -1024,6 +1037,21 @@ ul.custom-list-style {
   .header-main {
     padding: 20px 30px;
     text-align: center;
+    width: auto;
+
+    .social {
+      padding-right: 5px;
+      list-style-type: none;
+
+      li {
+        float: left;
+        a {
+          padding: 10px;
+          color: white;
+          font-size: 20px;
+        }
+      }
+    }
   }
 
   h1.logo {
@@ -1398,30 +1426,31 @@ ul.custom-list-style {
     }
   }
   .page-content {
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: normal;
+    }
     h1 {
       font-size: 26px;
-      font-weight: normal;
     }
     h2 {
       font-size: 24px;
-      font-weight: normal;
     }
     h3 {
       font-size: 20px;
-      font-weight: normal;
     }
     h4 {
       font-size: 18px;
-      font-weight: normal;
     }
     h5 {
       font-size: 16px;
-      font-weight: normal;
     }
     h6 {
       font-size: 14px;
-      font-weight: normal;
     }
+    p {
+      text-align: justify;
+    }
+
     .title {
       margin-top: 0;
       margin-bottom: 15px;
@@ -2232,6 +2261,17 @@ ul.custom-list-style {
       }
     }
   }
+
+  .header-main {
+    position: relative;
+
+    .social {
+      position: absolute;
+      bottom: 0;
+      padding-left: 0;
+    }
+  }
+
   .main-nav {
     .navbar-collapse {
       padding-left: 15px;
@@ -2389,6 +2429,19 @@ ul.custom-list-style {
   }
 }
 @media (min-width: 768px) {
+  .header {
+    .header-main {
+      position: relative;
+
+      .social {
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+        padding: 15px;
+      }
+    }
+  }
+
   .wrapper {
     min-height: inherit;
     margin-bottom: 0;
@@ -2484,7 +2537,7 @@ ul.custom-list-style {
     #tweet {
       min-height: 100px;
     }
-    height: 344px;
+    height: 212px;
   }
   .page-wrapper {
     .album-cover {
@@ -2500,11 +2553,11 @@ ul.custom-list-style {
   }
   .wrapper {
     min-height: 100%;
-    margin-bottom: -344px;
+    margin-bottom: -212px;
     &:after {
       content: "";
       display: block;
-      height: 344px;
+      height: 212px;
     }
   }
 }
