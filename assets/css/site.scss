@@ -2,6 +2,8 @@
 # Parse this file
 ---
 
+@import "vars";
+
 .header-main {
   .logo {
     float: left;
@@ -111,7 +113,7 @@ aside.page-sidebar > section {
 
   .main-nav {
     background: #08274c;
-    margin: 20px -50px 0;
+    margin: 20px -1*$header-horizontal-padding 0;
     float: none;
 
     .navbar-header {
