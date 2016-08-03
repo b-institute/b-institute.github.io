@@ -4,6 +4,7 @@ body {
   font-size: 13px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: $head-font;
 }
 
 .wrapper {
@@ -29,12 +30,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'open sans', arial, sans-serif;
+  font-family: $head-font;
   font-weight: 300;
 }
 
 p {
-  color: #444444;
+  color: #444;
   font-size: 13px;
 }
 

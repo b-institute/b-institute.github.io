@@ -2,8 +2,8 @@
 # Parse this file
 ---
 
-@import "base";
 @import "vars";
+@import "base";
 
 /*
  * Template Name: College Green - Responsive Website Template for Education & Training
@@ -160,34 +160,11 @@ body {
     }
   }
 }
-h1 {
-  font-family: $font-family_1;
-  font-weight: 300;
-}
-h2 {
-  font-family: $font-family_1;
-  font-weight: 300;
-}
-h3 {
-  font-family: $font-family_1;
-  font-weight: 300;
-}
-h4 {
-  font-family: $font-family_1;
-  font-weight: 300;
-}
-h5 {
-  font-family: $font-family_1;
-  font-weight: 300;
-}
-h6 {
-  font-family: $font-family_1;
-  font-weight: 300;
-}
+
 p {
   color: $color_1;
   font-size: 16px;
-  font-family: $font-family_1;
+  font-family: $deck-font;
 }
 a {
   color: $site-theme-color;
@@ -249,7 +226,7 @@ a.btn-cta {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid $site-theme-color;
-  font-family: $font-family_1;
+  font-family: $deck-font;
   &:hover {
     color: $color_4;
     background: #84aac9;
@@ -276,7 +253,7 @@ a.btn-cta {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid $site-theme-color;
-  font-family: $font-family_1;
+  font-family: $deck-font;
   &:hover {
     color: $color_4;
     background: #84aac9;
@@ -432,7 +409,7 @@ ul.custom-list-style {
     display: block;
     padding-top: 5px;
     font-size: 15px;
-    font-family: $font-family_1;
+    font-family: $deck-font;
     font-weight: 500;
   }
 }
@@ -585,6 +562,7 @@ ul.custom-list-style {
 .nav {
   >li {
     >a {
+      font-family: $head-font;
       font-size: 20px;
       &:focus {
         background: inherit;
@@ -879,7 +857,7 @@ ul.custom-list-style {
     font-weight: 500;
     color: $color_4;
     position: relative;
-    font-family: $font-family_1;
+    font-family: $deck-font;
     .off {
       font-size: 11px;
       position: absolute;
@@ -1043,7 +1021,7 @@ ul.custom-list-style {
       list-style: none;
       float: left;
       font-size: 11px;
-      font-family: $font-family_1;
+      font-family: $deck-font;
       &:last-child {
         a {
           padding-right: 0;
@@ -1066,7 +1044,7 @@ ul.custom-list-style {
   }
   .contact {
     font-size: 20px;
-    font-family: $font-family_1;
+    font-family: $deck-font;
     font-weight: 300;
     margin-top: 10px;
     p {
@@ -1145,7 +1123,7 @@ ul.custom-list-style {
     .nav-item {
       font-weight: 600;
       text-transform: uppercase;
-      font-family: $font-family_1;
+      font-family: $deck-font;
       z-index: 100;
       a {
         color: $color_9;
@@ -1289,7 +1267,7 @@ ul.custom-list-style {
       bottom: 30px;
       color: $color_4;
       display: inline-block;
-      font-family: $font-family_1;
+      font-family: $deck-font;
       .main {
         display: inline-block;
         background: $site-theme-color;
@@ -1423,9 +1401,6 @@ ul.custom-list-style {
     }
     h6 {
       font-size: 14px;
-    }
-    p {
-      text-align: justify;
     }
 
     .title {
@@ -1876,7 +1851,7 @@ ul.custom-list-style {
     .btn-cta {
       font-size: 20px;
       margin-top: 30px;
-      font-family: $font-family_3;
+      font-family: $head-font;
     }
   }
   .news {
@@ -2244,12 +2219,17 @@ ul.custom-list-style {
 
     .social {
       position: absolute;
+      left: 10px;
       bottom: 0;
       padding-left: 0;
     }
   }
 
   .main-nav {
+    .navbar-toggle {
+      margin-right: 0;
+    }
+
     .navbar-collapse {
       padding-left: 15px;
       padding-right: 15px;
@@ -2259,7 +2239,7 @@ ul.custom-list-style {
       box-shadow: 0;
 
       &.in {
-        margin-bottom: 40px;
+        padding-bottom: 40px;
       }
     }
     .nav {
@@ -2419,10 +2399,23 @@ ul.custom-list-style {
         right: 20px;
         bottom: 10px;
         padding: 15px;
+
+        li {
+          a {
+            font-size: 18px;
+          }
+        }
       }
     }
   }
 
+  .nav {
+    > li {
+      > a {
+        font-size: 16px;
+      }
+    }
+  }
   .wrapper {
     min-height: inherit;
     margin-bottom: 0;

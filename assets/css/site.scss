@@ -4,6 +4,13 @@
 
 @import "vars";
 
+// .wrapper {
+//   &.journal-issue,
+//   &.journal-home {
+//     background-color: $site-bg-color;
+//   }
+// }
+
 .header-main {
   .logo {
     float: left;
@@ -22,7 +29,6 @@
   }
 }
 
-
 #promo-slider {
   margin-bottom: 0;
 }
@@ -31,36 +37,50 @@ aside.page-sidebar > section {
   padding: 20px;
 }
 
-.gsc-branding, .gsc-clear-button {
-  display: none;
-}
-
-#cse .gsc-search-box {
-  margin-bottom: 0;
-}
-
-.journal {
-  section {
-    background: none;
+.page-content {
+  h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
   }
-  .panel table {
+
+  table {
     width: 100%;
-    margin-bottom: 20px;
-  }
-  .md-floated.left {
-    padding: 0 30px 15px 0;
-    float: left;
-  }
-  .md-floated.right {
-    padding: 0 0 15px 30px;
-    float: right;
   }
 
-  #accordion {
-    ul {
-      padding: 0 0 0 15px;
-      margin: 0;
-      list-style-type: none;
+  &.journal {
+    h4, h5 {
+      margin-top: 0;
+    }
+
+    section {
+      background: none;
+    }
+    .panel table {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .md-floated.left {
+      padding: 0 30px 15px 0;
+      float: left;
+    }
+    .md-floated.right {
+      padding: 0 0 15px 30px;
+      float: right;
+    }
+
+    #accordion {
+      padding: 15px 0 0;
+
+      ul {
+        list-style-type: none;
+      }
+    }
+
+    .journal-content {
+      padding: 15px;
+
+      p {
+        text-align: justify;
+      }
     }
   }
 }
@@ -71,26 +91,47 @@ aside.page-sidebar > section {
   margin-top: 20px;
 }
 
-@media (max-width: 900px) {
-  .nav {
-    >li {
-      >a {
-        font-size: 15px;
+.custom-list {
+  h4 {
+    background: $bg-tint1;
+    padding: 15px;
+    font-family: $head-font-thin;
+    margin-bottom: 0;
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      background: $bg-tint2;
+      font-family: $head-font;
+      font-size: 15px;
+      margin: 0;
+
+      a {
+        display: block;
+        padding: 10px;
+      }
+
+      &:hover {
+        background: $bg-tint1;
+      }
+    }
+
+    &.issue-links-list {
+      li {
+        text-transform: uppercase;
       }
     }
   }
+}
 
-  .header {
-    .header-main {
-      .social {
-        bottom: 20px;
-
-        li a {
-          font-size: 18px;
-        }
-      }
-    }
-  }
+.journal-image {
+  width: 298px;
+  height: 430px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  float: left;
 }
 
 @media (max-width: 767px) {
@@ -103,10 +144,6 @@ aside.page-sidebar > section {
         #logo {
           width: 120px;
         }
-      }
-
-      .social {
-        bottom: 0;
       }
     }
   }
