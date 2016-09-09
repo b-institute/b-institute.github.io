@@ -1791,6 +1791,7 @@ ul.custom-list-style {
   .section-content {
     padding: 15px;
     padding-top: 0;
+    text-align: justify;
   }
   .carousel-controls {
     a {
@@ -1873,6 +1874,12 @@ ul.custom-list-style {
       top: 0;
       width: 100px;
       padding-right: 20px;
+    }
+
+    .section-heading,
+    .section-content {
+      margin: 0 auto;
+      max-width: 1170px;
     }
   }
   .events {
