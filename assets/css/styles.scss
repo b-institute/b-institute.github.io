@@ -64,11 +64,11 @@ body {
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: bold;
-    color: #dce7f0;
+    color: #fff;
     font-size: 20px;
   }
   .footer-content {
-    padding: 30px 0 10px;
+    padding: 30px 0 15px;
     font-size: 12px;
 
     .footer-col {
@@ -78,7 +78,7 @@ body {
       .fa {
         margin-right: 10px;
         display: inline-block;
-        color: $color_11;
+        color: $color_10;
       }
       .fa.fa-phone {
         font-size: 16px;
@@ -90,7 +90,7 @@ body {
       a {
         color: $color_10;
         &:hover {
-          color: $color_12;
+          color: #fff;
         }
       }
     }
@@ -150,10 +150,10 @@ body {
         font-size: 18px;
         line-height: 2;
         a {
-          color: $color_13;
+          color: $color_10;
           padding: 0 5px;
           &:hover {
-            color: $site-theme-color;
+            color: #fff;
           }
         }
       }
@@ -167,7 +167,7 @@ p {
   font-family: $deck-font;
 }
 a {
-  color: $site-theme-color;
+  color: $color_15;
   -webkit-transition: all 0.18s ease-in-out;
   -moz-transition: all 0.18s ease-in-out;
   -ms-transition: all 0.18s ease-in-out;
@@ -206,8 +206,8 @@ a {
   border: 1px solid $site-theme-color;
   color: $color_4;
   &:hover {
-    background: #84aac9;
-    border: 1px solid #84aac9;
+    background: $action-color;
+    border: 1px solid $action-color;
     color: $color_4;
   }
 }
@@ -229,8 +229,8 @@ a.btn-cta {
   font-family: $deck-font;
   &:hover {
     color: $color_4;
-    background: #84aac9;
-    border: 1px solid #84aac9;
+    background: $action-color;
+    border: 1px solid $action-color;
   }
   .fa {
     margin-right: 10px;
@@ -256,8 +256,8 @@ a.btn-cta {
   font-family: $deck-font;
   &:hover {
     color: $color_4;
-    background: #84aac9;
-    border: 1px solid #84aac9;
+    background: $action-color;
+    border: 1px solid $action-color;
   }
   .fa {
     margin-right: 10px;
@@ -281,14 +281,23 @@ a.btn-cta {
     box-shadow: none;
   }
 }
+
 blockquote, .people {
   font-size: 13px;
   p {
     font-size: 14px;
     line-height: 1.5;
+    font-style: italic;
+    &.author {
+      text-align: right;
+    }
   }
 }
 
+// blockquote + p {
+//   text-align: right;
+//   margin-bottom: 25px;
+// }
 
 .RedDamask {
   background-color: #e27240;
@@ -353,7 +362,7 @@ blockquote, .people {
   }
 }
 #topcontrol {
-  background: #84aac9;
+  background: $site-theme-color-darkest;
   color: $color_4;
   text-align: center;
   display: inline-block;
@@ -969,7 +978,7 @@ ul.custom-list-style {
       margin-right: 0;
     }
     a {
-      background: #27435a;
+      background: $site-theme-color-darkest;
       &:hover {
         background: $site-theme-color;
         .fa {
@@ -991,6 +1000,7 @@ ul.custom-list-style {
     padding: 20px $header-horizontal-padding;
     text-align: center;
     width: auto;
+    max-width: $content-max-width;
 
     .social {
       padding-right: 5px;
@@ -1000,8 +1010,11 @@ ul.custom-list-style {
         float: left;
         a {
           padding: 10px;
-          color: white;
+          color: $color_10;
           font-size: 20px;
+          &:hover {
+            color: #fff;
+          }
         }
       }
     }
@@ -1099,7 +1112,7 @@ ul.custom-list-style {
 .main-nav {
   background: $site-theme-color;
   button {
-    background: #27435a;
+    background: #823f11;
     color: $color_4 !important;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -1126,7 +1139,7 @@ ul.custom-list-style {
       font-family: $deck-font;
       z-index: 100;
       a {
-        color: $color_9;
+        color: #fff;
         -webkit-transition: all 0.18s ease-in-out;
         -moz-transition: all 0.18s ease-in-out;
         -ms-transition: all 0.18s ease-in-out;
@@ -1151,10 +1164,10 @@ ul.custom-list-style {
         text-transform: none;
         min-width: 220px;
         a {
-          border-bottom: 1px solid #3e6a8f;
+          border-bottom: 1px solid #a5551d;
           padding: 8px 20px;
           &:hover {
-            background: #3e6a8f;
+            background: #8c4718;
             color: $color_4;
             padding-left: 24px;
           }
@@ -1189,7 +1202,7 @@ ul.custom-list-style {
     .nav-item.active {
       position: relative;
       > a {
-        background: #4678a1;
+        background: #a5551d;
         color: $color_4;
       }
       > a.dropdown-toggle {
@@ -1200,7 +1213,7 @@ ul.custom-list-style {
     }
     .nav-item.open {
       a {
-        background: #4678a1;
+        background: #a5551d;
         color: $color_4;
       }
     }
@@ -1407,6 +1420,7 @@ ul.custom-list-style {
       margin-top: 0;
       margin-bottom: 15px;
       font-weight: 300;
+      font-weight: bold;
     }
     .page-row {
       margin-bottom: 30px;
@@ -1458,44 +1472,19 @@ ul.custom-list-style {
       max-width: 100%;
     }
     .album-cover {
-      border: 1px solid #e8e8e8;
       margin-bottom: 30px;
       &:hover {
-        -webkit-box-shadow: 0px 0px 5px 0px #e8e8e8;
-        -moz-box-shadow: 0px 0px 5px 0px #e8e8e8;
-        box-shadow: 0px 0px 5px 0px #e8e8e8;
-      }
-      >a {
-        &:hover {
-          position: relative;
-          img {
-            display: block;
-            -webkit-opacity: 0.9;
-            -moz-opacity: 0.9;
-            opacity: 0.9;
-          }
-        }
-      }
-      .desc {
-        padding: 15px;
-        position: relative;
-        &:before {
-          content: "";
-          display: block;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-bottom: 10px solid #fff;
-          position: absolute;
-          top: -10px;
+        img {
+          box-shadow: 0 2px 5px 0 #666;
         }
       }
     }
     .prettyphoto {
       &:hover {
         img {
-          -webkit-box-shadow: 0px 0px 5px 0px #e8e8e8;
-          -moz-box-shadow: 0px 0px 5px 0px #e8e8e8;
-          box-shadow: 0px 0px 5px 0px #e8e8e8;
+          -webkit-box-shadow: 0 2px 5px 0 #a8a8a8;
+          -moz-box-shadow: 0 2px 5px 0 #a8a8a8;
+          box-shadow: 0 2px 5px 0 #a8a8a8;
         }
       }
     }

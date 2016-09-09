@@ -1,0 +1,24 @@
+---
+layout: gallery
+title: Proceedings
+navclass: proceedings-home
+---
+  {% for item in site.data.proceedings %}
+    {% assign loopindex = forloop.index | modulo: 4 %}
+    {% if loopindex == 1 %}
+      <div class="row page-row">
+    {% endif %}
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="album-cover">
+            <img class="img-responsive" src="../assets/images/proceedings/{{item.image}}" alt="{{item.title}}" />
+            <div class="desc">
+              <h4>{{item.title}}</h4>
+              <h5>{{item.info}}</h5>
+              <p>{{item.description}}</p>
+            </div>
+          </div>
+        </div>
+    {% if loopindex == 0 or forloop.last %}
+      </div> <!-- //page-row -->
+    {% endif %}
+  {% endfor %}

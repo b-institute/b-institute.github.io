@@ -17,7 +17,7 @@ layout: default
         </ul>
       </div><!--//breadcrumbs-->
     </header>
-    <div class="page-content journal">
+    <div class="page-content md">
       <div class="row page-row">
         <div class="col-md-3 col-sm-4">
           <div id="accordion">
@@ -48,11 +48,9 @@ layout: default
             </div><!--//panel-->
           </div><!--//panel-group-->
         </div>
-        <div class="col-md-9 col-sm-8">
-          <div class="journal-content">
-            <img class="img-responsive journal-image" src="../assets/images/journal/{{page.link}}.png" alt="{{issue.title}}" />
-            {{content}}
-          </div>
+        <div class="col-md-9 col-sm-8 md-content">
+          <img class="img-responsive md-image" src="../assets/images/journal/{{page.link}}.png" alt="{{issue.title}}" />
+          {{content}}
         </div>
       </div>
     </div><!--//page-content-->

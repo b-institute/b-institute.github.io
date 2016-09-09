@@ -12,9 +12,6 @@ collections:
   events:
     output: true
     permalink: /events/:path
-  publications:
-    output: true
-    permalink: /publications/:path
   journal:
     output: true
     permalink: /journal/:path

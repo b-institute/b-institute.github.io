@@ -38,15 +38,15 @@ aside.page-sidebar > section {
 }
 
 .page-content {
-  h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
-  }
+  // h1, h2, h3, h4, h5, h6 {
+  //   text-transform: uppercase;
+  // }
 
   table {
     width: 100%;
   }
 
-  &.journal {
+  &.md {
     h4, h5 {
       margin-top: 0;
     }
@@ -67,6 +67,12 @@ aside.page-sidebar > section {
       float: right;
     }
 
+    .highlight, .highlight + p {
+      background: $bg-tint1;
+      border: 1px solid #999;
+      padding: 20px;
+    }
+
     #accordion {
       padding: 15px 0 0;
 
@@ -75,9 +81,12 @@ aside.page-sidebar > section {
       }
     }
 
-    .journal-content {
+    .md-content {
       padding: 15px;
-
+      font-family: $deck-font;
+      li {
+        font-size: 14px;
+      }
       p {
         text-align: justify;
       }
@@ -126,7 +135,7 @@ aside.page-sidebar > section {
   }
 }
 
-.journal-image {
+.md-image {
   width: 298px;
   height: 430px;
   margin-right: 25px;
@@ -149,7 +158,7 @@ aside.page-sidebar > section {
   }
 
   .main-nav {
-    background: #08274c;
+    background: $site-theme-color-dark;
     margin: 20px -1*$header-horizontal-padding 0;
     float: none;
 

@@ -6,18 +6,17 @@ description:
   - Some basic description (optional)
   - Another Paragraph (optional)
 ---
+
+<p class="highlight"></p>
+
 ### Essay Result AISSQ - 2015
 
-3rd:  Rishika Behera, BITS Pilani, Pilani
-         and 
-         Srinivas Desikan, IIT Madras, Chennai 
+- 1st: Arokiya Raj J, Pratiksha Major Seminary, New Delhi
+- 2nd: Abhishek Despande, Mahatma Phule Agricultural University, Maharastra
+- 3rd: Rishika Behera, BITS Pilani, and Srinivas Desikan, IIT Madras, Chennai 
 
-2nd: Abhishek Despande, Mahatma Phule Agricultural University, Maharastra
+The winners will receive a formal mail from the Essay competition convener Prof. H K Mohanta. The winners have to make an oral presentation at the AISSQ conference. Details regarding the presentation will be intimated by email. For further query kindly communicate with [Prof. Mohanta](mailto:harekrishna.bits[at]gmail.com)
 
-1st:  Arokiya Raj J, Pratiksha Major Seminary, New Delhi
-
-The winners will receive a formal mail from the Essay competition convener Prof. H K Mohanta. The winners have to make an oral presentation at the AISSQ conference. Details regarding the presentation will be intimated by email. For further query kindly communicate with Prof. Mohanta &lt;harekrishna.bits[at]gmail.com&gt;.
-_____________________________________________________
 
 
 Guidelines                                               
