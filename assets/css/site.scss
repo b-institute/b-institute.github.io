@@ -38,10 +38,6 @@ aside.page-sidebar > section {
 }
 
 .page-content {
-  // h1, h2, h3, h4, h5, h6 {
-  //   text-transform: uppercase;
-  // }
-
   table {
     width: 100%;
   }
@@ -164,6 +160,24 @@ aside.page-sidebar > section {
 
     .navbar-header {
       padding-right: 12px;
+    }
+  }
+}
+
+.about-tds {
+  .testimonials {
+    blockquote {
+      margin-bottom: 0;
+    }
+
+    .people {
+      display: block;
+      margin-top: 0;
+      text-align: right;
+
+      & + blockquote {
+        margin-top: 10px;
+      }
     }
   }
 }

@@ -1953,37 +1953,6 @@ ul.custom-list-style {
       margin-right: 5px;
     }
   }
-  .testimonials {
-    position: relative;
-    .carousel-controls {
-      position: absolute;
-      right: 10px;
-      top: 10px;
-    }
-    .fa {
-      color: $site-theme-color;
-      margin-right: 5px;
-      font-size: 18px;
-    }
-    .carousel {
-      .item {
-        min-height: 298px;
-      }
-    }
-    .people {
-      margin-top: 10px;
-      .name {
-        color: $site-theme-color;
-      }
-      .title {
-        color: $color_6;
-      }
-    }
-    .profile {
-      border-radius: 50%;
-    }
-  }
-
   .awards {
     background: #fff;
     .logos {
@@ -2435,26 +2404,46 @@ ul.custom-list-style {
   .footer-col-inner {
     margin-bottom: 15px;
   }
-  .home-page {
-    .testimonials {
-      .carousel {
-        .item {
-          min-height: inherit;
-        }
-      }
-    }
-    .events {
-      .section-content {
-        min-height: inherit;
-      }
-    }
-  }
   .page-wrapper {
     .album-cover {
       min-height: 360px;
     }
   }
 }
+
+.testimonials {
+  position: relative;
+
+  .carousel-controls {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .fa {
+    color: $site-theme-color;
+    margin-right: 5px;
+    font-size: 18px;
+  }
+  .carousel {
+    .item {
+      min-height: 298px;
+    }
+  }
+  .people {
+    margin-top: 10px;
+    .name {
+      color: $site-theme-color;
+    }
+    .title {
+      color: $color_6;
+    }
+  }
+  .profile {
+    border-radius: 50%;
+  }
+}
+
 @media (min-width: 992px) {
   .nav {
     >li {
