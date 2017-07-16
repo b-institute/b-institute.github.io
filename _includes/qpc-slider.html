@@ -1,0 +1,15 @@
+<div id="qpc-slider" class="slider flexslider">
+  <div class="flex-slider-mask"></div>
+  <ul class="slides">
+    {% for slide in site.data.qpc_slides %}
+    <li>
+      <img src="../assets/images/qpc/{{slide.src}}" alt="{{slide.title}}"/>
+        <p class="flex-caption">
+          <span class="main" >{{slide.title}}</span>
+          <br />
+          <span class="secondary clearfix" >{{slide.caption}}</span>
+        </p>
+    </li>
+    {% endfor %}
+  </ul>
+</div><!--//flexslider-->

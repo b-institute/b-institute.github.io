@@ -63,7 +63,7 @@ aside.page-sidebar > section {
       float: right;
     }
 
-    .highlight, .highlight + p {
+    .highlight {
       background: $bg-tint1;
       border: 1px solid #999;
       padding: 20px;
@@ -160,6 +160,13 @@ aside.page-sidebar > section {
 
     .navbar-header {
       padding-right: 12px;
+    }
+  }
+}
+
+#qpc-slider {
+  .slides {
+    img {
     }
   }
 }

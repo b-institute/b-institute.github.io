@@ -26,34 +26,11 @@ $(document).ready(function() {
   /* ======= jQuery Placeholder ======= */
   $('input, textarea').placeholder();
 
-
   /* ======= Carousels ======= */
   $('#news-carousel').carousel({interval: false});
   $('#videos-carousel').carousel({interval: false});
   $('#testimonials-carousel').carousel({interval: 6000, pause: "hover"});
   $('#awards-carousel').carousel({interval: false});
-
-
-  /* ======= Flickr PhotoStream ======= */
-  // $('#flickr-photos').jflickrfeed({
-  //     limit: 12,
-  //     qstrings: {
-  //     id: '32104790@N02' /* Use idGettr.com to find the flickr user id */
-  //     },
-  //     itemTemplate:
-  //         '<li>' +
-  //         '<a rel="prettyPhoto[flickr]" href="{{image}}" title="{{title}}">' +
-  //          '<img src="{{image_s}}" alt="{{title}}" />' +
-  //         '</a>' +
-  //         '</li>'
-
-  // }, function(data) {
-  //  $('#flickr-photos a').prettyPhoto();
-  // });
-
-  /* ======= Pretty Photo ======= */
-  // http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/
-  // $('a.prettyphoto').prettyPhoto();
 
   /* ======= Twitter Bootstrap hover dropdown ======= */
 
@@ -90,7 +67,7 @@ $(document).ready(function() {
       for (var i = 0; i < 5; i++) {
         var image = json.data[i];
         var liHtml = ''+
-          '<img src="' + image.link + '"  alt="' + image.link + '" />';
+          '<img src="' + image.link + '" alt="' + image.link + '"/>';
           // '<p class="flex-caption">' +
           // '  <span class="main" >' + image.title + '</span>' +
           // '  <br />' + (image.description ?
@@ -115,5 +92,4 @@ $(document).ready(function() {
   });
 
   $('.normalize-height').normalizeHeight();
-
 });
